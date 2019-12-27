@@ -1,0 +1,27 @@
+#cabecalho h1 {
+	font-size: 80px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#amorArthur img {
+	width: 350px;
+	height: 350px;
+}
+
+#idGarotaMaisLinda img {
+	width: 350px;
+	height: 350px;	
+}
+
+#gif {
+	width: 300px;
+	height: 150px;		
+}
+
+#garotaMaisLinda {
+	width: 500px;
+	height: 200px;	
+}

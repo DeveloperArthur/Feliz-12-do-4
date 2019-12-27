@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Feliz 12 do 4</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link href="style.css" rel="stylesheet">
-</head>
-<body align="center">
-	<!-- <div id="imagens">
-		<img src="coracao.gif">
-		<img src="coracao.gif">
-	</div>
-	
-	<div id="cabecalho">
-		<h1><u>Feliz 2 anos!</u></h1>		
-	</div> -->
+	<head>
+		<title>Feliz 12 do 4</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="css/style.css" rel="stylesheet">
+		<script type="text/javascript" src="js/backend.js"></script>
+	</head>
+	<body align="center">
+		<div id="imagens">
+			<img src="imgs/coracao.gif">
+			<img src="imgs/coracao.gif">
+		</div>
+		
+		<div id="cabecalho">
+			<h1><u>Feliz 2 anos!</u></h1>		
+		</div>
 
-	<p>Sabe o que aconteceu quando te vi pela primeira vez?</p>
-	<button type="button" class="btn btn-danger" onclick="alert('Deu erro no meu sistema ~_~ \n e me apaixonei <3')">Clica e descubra</button>
+		<hr>
 
-</body>
+		<p>Sabe o que aconteceu quando te vi pela primeira vez?</p>
+		<button type="button" class="btn btn-danger" onclick="erroAlert();">Clica e descubra</button>
+		<br><br>
+		<img id="gif" src="imgs/pernalonga.gif">
+
+		<hr>
+
+		<p>Clique aqui para saber quem é o amor da vida do Arthur</p>
+		<button type="button" class="btn btn-primary" onclick="mostrarImagem();">Amor da vida do Arthur</button>
+		<br><br>
+		<img id="gif" src="imgs/dougapaixonado.gif">
+		<br><br>
+		<div id="amorArthur"></div>
+
+		<hr>
+
+		<p>Clique aqui para saber quem é a garota mais linda do mundo</p>
+		<button type="button" class="btn btn-warning" onclick="mostrarGarotaMaisLinda();">Garota mais linda do munco</button>
+		<br><br>
+		<img id="garotaMaisLinda" src="imgs/mulherMaisLinga.jpg">
+		<br><br>
+		<div id="idGarotaMaisLinda"></div>	
+		
+		<hr>
+
+		<button type="button" class="btn btn-link" onclick="mostrarHulkSantana();">E se nossos gostos se fundissem? (Clique aqui)</button>
+	</body>
 </html>

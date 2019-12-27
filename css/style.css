@@ -25,3 +25,7 @@ p {
 	width: 500px;
 	height: 200px;	
 }
+
+#hulk {
+	background: linear-gradient(white, green) no-repeat center center fixed;
+}

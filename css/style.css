@@ -16,6 +16,21 @@ p {
 	height: 350px;	
 }
 
+#imagem {
+    width: 350px;
+    height: 350px;	
+}
+
+#desenhoCasal {
+    width: 350px;
+    height: 450px;	
+}
+
+#emoj {
+    width: 350px;
+    height: 250px;	
+}
+
 #gif {
 	width: 300px;
 	height: 150px;		

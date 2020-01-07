@@ -1,19 +1,32 @@
 #cabecalho h1 {
-	font-size: 80px;
+    font-size: 80px;
+}
+
+#link {
+    font-size: 20px;
+}
+
+#header{
+    width: 500px;
+    height: 350px;
+}
+
+#legenda {
+    font-size: 12px;
 }
 
 p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 #amorArthur img {
-	width: 350px;
-	height: 350px;
+    width: 350px;
+    height: 350px;
 }
 
 #idGarotaMaisLinda img {
-	width: 350px;
-	height: 350px;	
+    width: 350px;
+    height: 350px;	
 }
 
 #imagem {
@@ -32,15 +45,15 @@ p {
 }
 
 #gif {
-	width: 300px;
-	height: 150px;		
+    width: 300px;
+    height: 150px;		
 }
 
 #garotaMaisLinda {
-	width: 500px;
-	height: 200px;	
+    width: 500px;
+    height: 200px;	
 }
 
 #hulk {
-	background: linear-gradient(white, green) no-repeat center center fixed;
+    background: linear-gradient(white, green) no-repeat center center fixed;
 }

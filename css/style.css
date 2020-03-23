@@ -57,3 +57,53 @@ p {
 #hulk {
     background: linear-gradient(white, green) no-repeat center center fixed;
 }
+
+footer{
+    background-color: blue
+}
+
+#textFooter {
+    color: white
+}
+
+/**
+*** Seta para ESQUERDA
+**/
+.seta-esquerda:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid black; 
+}
+
+/**
+*** Seta para DIREITA
+**/
+.seta-direita:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+}
+
+#slideFotoInicial img {
+    width: 350px;
+    height: 350px;
+}
+
+#botaoSeta {
+    width: 50px;
+    height: 50px;
+}

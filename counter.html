@@ -74,22 +74,35 @@
         function atualizarContador() {
             const dataInicio = new Date('2018-04-12T00:00:00');
             const dataAtual = new Date();
-            const diferenca = dataAtual - dataInicio;
-
-            const anos = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365));
-            const meses = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 30)) % 12;
-            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24)) % 30;
-            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
-
+        
+            let anos = dataAtual.getFullYear() - dataInicio.getFullYear();
+            let meses = dataAtual.getMonth() - dataInicio.getMonth();
+            let dias = dataAtual.getDate() - dataInicio.getDate();
+            
+            // Se o número de meses for negativo, significa que ainda não completou um ano inteiro
+            if (meses < 0) {
+                anos--;
+                meses += 12;
+            }
+        
+            // Se o número de dias for negativo, significa que o mês ainda não completou
+            if (dias < 0) {
+                meses--;
+                let ultimoDiaMesAnterior = new Date(dataAtual.getFullYear(), dataAtual.getMonth(), 0).getDate();
+                dias += ultimoDiaMesAnterior;
+            }
+        
+            const horas = dataAtual.getHours();
+            const minutos = dataAtual.getMinutes();
+            const segundos = dataAtual.getSeconds();
+        
             document.getElementById('contador').innerHTML = 
                 `${anos} anos, ${meses} meses, ${dias} dias<br>
                 ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
         }
-
-        setInterval(atualizarContador, 1);
-        atualizarContador();
+        
+        setInterval(atualizarContador, 1000);
+        atualizarContador();  
     </script>
 
 </body>
